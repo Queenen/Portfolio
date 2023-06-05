@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  max-width: 1200px;
+}
+
+@font-face {
+  font-family: "Abril";
+  src: url(/font/AbrilFatface-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+body#index {
+  background-image: url(/images/12483.jpg);
+  background-position: 30% 20%;
+}
+
+#index header {
+  margin: 3rem 3rem -4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+#index header div {
+  width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav .icon {
+  width: 55px;
+  margin: 0 0.25rem;
+}
+
+nav {
+  margin-bottom: 17rem;
+}
+
+h1,
+h2 {
+  font-family: "Abril";
+  font-size: 1.4rem;
+  color: white;
+  letter-spacing: 0.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+header p {
+  color: yellow;
+  letter-spacing: 0.22rem;
+  margin-top: 0.5rem;
+}
+
+#index_card_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.index_cards {
+  background-color: rgb(255, 255, 255);
+  width: 17rem;
+  height: 20rem;
+  border-radius: 2rem;
+  border: 1.5px solid whitesmoke;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.index_cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  border-radius: 2rem;
+}
+
+.index_cards h3 {
+  text-align: right;
+  border-radius: 2rem 2rem 0 0;
+  border-bottom: 1.5px solid whitesmoke;
+  color: white;
+  background-color: #1e2e33ac;
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  position: relative;
+  letter-spacing: 0.2rem;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.index_cards p {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+  line-height: 1.5rem;
+}
+
+.github {
+  z-index: 2;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.index_cards:nth-child(1) {
+  background-image: url(/images/rainy-days.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.index_cards:nth-child(2) {
+  background-image: url(/images/CSM.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.index_cards:nth-child(3) {
+  background-image: url(/images/vivid-escapes.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 1rem;
+  border: 1px solid #888;
+  width: 80%;
+  position: relative;
+}
+
+.modal-content p {
+  color: black;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .index_cards {
+    width: 60%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #index_card_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .index_cards {
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+  #index header div {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin: -8rem 0 3rem 2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .index_cards p {
+    font-size: 18px;
+  }
+  header p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .index_cards {
+    width: 25%;
+    margin-bottom: 0;
+  }
+  body#index {
+    background-position: 50% 20%;
+  }
+  h3 {
+    font-size: 14px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 20px;
+  }
+}
