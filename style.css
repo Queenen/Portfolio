@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  max-width: 1200px;
 }
 
 @font-face {
@@ -62,7 +61,7 @@ h2 {
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 header p {
@@ -75,6 +74,7 @@ header p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-bottom: 2rem;
 }
 
@@ -100,13 +100,32 @@ header p {
   border-radius: 2rem;
 }
 
-.index_cards h3 {
-  text-align: right;
+.logo-link {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
   border-radius: 2rem 2rem 0 0;
-  border-bottom: 1.5px solid whitesmoke;
+  background-color: rgba(1, 6, 82, 0.5);
+}
+
+hr {
+  border: 1px solid whitesmoke;
+  z-index: 2;
+  position: relative;
+}
+
+.logo-link a {
+  z-index: 2;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 55px;
+}
+
+.index_cards h3 {
+  padding: 1.5rem 2rem;
   color: white;
-  background-color: #1e2e33ac;
-  padding: 1.5rem 1.5rem 1.5rem 0;
   position: relative;
   letter-spacing: 0.2rem;
   z-index: 2;
@@ -117,33 +136,28 @@ header p {
   position: absolute;
   z-index: 2;
   color: white;
+  padding: 0 2rem;
+  width: 100%;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, 0%);
   line-height: 1.5rem;
 }
 
-.github {
-  z-index: 2;
-  position: absolute;
-  top: 1rem;
-  left: 1.5rem;
-}
-
 .index_cards:nth-child(1) {
-  background-image: url(/images/rainy-days.PNG);
+  background-image: url(/images/vivid-escapes.PNG);
   background-size: cover;
   background-position: center;
 }
 
 .index_cards:nth-child(2) {
-  background-image: url(/images/CSM.PNG);
+  background-image: url(/images/rainy-days.PNG);
   background-size: cover;
   background-position: center;
 }
 
 .index_cards:nth-child(3) {
-  background-image: url(/images/vivid-escapes.PNG);
+  background-image: url(/images/CSM.PNG);
   background-size: cover;
   background-position: center;
 }
@@ -193,7 +207,7 @@ header p {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .index_cards {
-    width: 60%;
+    width: 20rem;
   }
 }
 
@@ -206,7 +220,7 @@ header p {
     justify-content: space-evenly;
   }
   .index_cards {
-    width: 40%;
+    width: 35%;
     margin-bottom: 2rem;
   }
   #index header div {
@@ -220,9 +234,6 @@ header p {
   }
   h2 {
     font-size: 4rem;
-  }
-  h3 {
-    font-size: 20px;
   }
   .index_cards p {
     font-size: 18px;
@@ -241,14 +252,8 @@ header p {
   body#index {
     background-position: 50% 20%;
   }
-  h3 {
-    font-size: 14px;
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  h3 {
-    font-size: 20px;
-  }
 }
