@@ -1,30 +1,27 @@
-const phone = document.querySelector("#phone");
-const mail = document.querySelector("#mail");
+const phoneModal = document.getElementById("phoneModal");
+const mailModal = document.getElementById("mailModal");
+const phoneIcon = document.getElementById("phone");
+const mailIcon = document.getElementById("mail");
+const closeButtons = document.getElementsByClassName("close");
 
-const modal = document.getElementById("myModal");
-const info = document.querySelector(".modal-info");
-const closeButton = document.querySelector(".close");
+phoneIcon.addEventListener("click", function () {
+  phoneModal.style.display = "block";
+});
 
-// Open the modal
-function openNumber() {
-  modal.style.display = "block";
-  info.innerHTML = `
-  <b>Mobile Number:</b> <p><b>+00 000 00 000</b></p>
-  <p>I'm looking forward to hear from you! 📞</p>`;
-}
+mailIcon.addEventListener("click", function () {
+  mailModal.style.display = "block";
+});
 
-function openMail() {
-  modal.style.display = "block";
-  info.innerHTML = `
-    <b>Email:</b> <p><b>example@mail.com</b></p>
-    <p>I'm looking forward to hear from you! 📧</p>`;
-}
+Array.from(closeButtons).forEach(function (button) {
+  button.addEventListener("click", function () {
+    phoneModal.style.display = "none";
+    mailModal.style.display = "none";
+  });
+});
 
-// Close the modal
-function closeModal() {
-  modal.style.display = "none";
-}
-
-closeButton.addEventListener("click", closeModal);
-phone.addEventListener("click", openNumber);
-mail.addEventListener("click", openMail);
+window.addEventListener("click", function (event) {
+  if (event.target == phoneModal || event.target == mailModal) {
+    phoneModal.style.display = "none";
+    mailModal.style.display = "none";
+  }
+});
