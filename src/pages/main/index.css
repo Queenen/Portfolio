@@ -1,0 +1,28 @@
+#hero h1,
+h2 {
+  font-family: "Abril FatFace", sans-serif;
+}
+
+#about img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+#about #skillset button {
+  letter-spacing: 0.2rem;
+}
+
+#about #skillset button:focus,
+#about #skillset button:active,
+#about #skillset button:hover {
+  background-color: rgb(46, 99, 46);
+  border-color: none; /* Adjust border color if necessary */
+  box-shadow: none; /* Removes the focus shadow */
+}
+
+#about #skillset h2 {
+  margin-right: -5rem;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,27 @@
+#cards .card {
+  min-width: 18rem;
+}
+
+#cards .card-body img {
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -o-object-position: 100% 0;
+     object-position: 100% 0;
+}
+
+#cards .card .card-header a:hover {
+  background-color: black;
+}
+
+.card-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1; /* Ensures overlay is above the image but below the text */
+}/*# sourceMappingURL=index.css.map */
