@@ -43,7 +43,7 @@ h2,
 }
 
 #cards .card .card-header a:hover {
-  background-color: black;
+  background-color: rgb(27, 27, 27);
 }
 
 .card-body::before {
@@ -53,8 +53,8 @@ h2,
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-  z-index: 1; /* Ensures overlay is above the image but below the text */
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 /*!
@@ -12024,10 +12024,12 @@ textarea.form-control-lg {
   }
 }
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  max-width: 1200px;
+  background-color: rgb(27, 27, 27);
 }
 
 .icon {

@@ -10,7 +10,7 @@
 }
 
 #cards .card .card-header a:hover {
-  background-color: black;
+  background-color: rgb(27, 27, 27);
 }
 
 .card-body::before {
@@ -20,6 +20,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-  z-index: 1; /* Ensures overlay is above the image but below the text */
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }

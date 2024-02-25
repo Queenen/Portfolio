@@ -29,7 +29,7 @@ function Main() {
             video games. People consider me a highly creative person.
           </p>
           <h2 className="my-3">Life Goals:</h2>
-          <ul className="ps-3 lh-lg mb-3">
+          <ul className="ps-3 lh-lg mb-4">
             <li>Learn something new every day</li>
             <li>Further improve my coding skills</li>
             <li>Travel the world</li>
@@ -56,6 +56,9 @@ function Main() {
             </button>
             <button className="btn btn-primary text-light fw-bold p-2 px-5 d-block mx-auto w-100">
               WORDPRESS
+            </button>
+            <button className="btn btn-primary text-light fw-bold p-2 px-5 d-block mx-auto w-100">
+              BOOTSTRAP
             </button>
             <button className="btn btn-primary text-light fw-bold p-2 px-5 d-block mx-auto w-100">
               REACT
